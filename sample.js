@@ -23,7 +23,7 @@ const firebaseConfig = {
     
     const auth = getAuth();
     const provider =new GoogleAuthProvider();
-    alert(5);
+    // alert(5);
     signInWithPopup(auth, provider)
     .then((result) => {
      
@@ -32,7 +32,7 @@ const firebaseConfig = {
     
       const user = result.user;
       console.log(user);
-      window.location.href="https://pavankumarpammi.github.io/Img-expand-got/";
+      window.location.href="logged.html";
       
     }).catch((error) => {
       // Handle Errors here.
